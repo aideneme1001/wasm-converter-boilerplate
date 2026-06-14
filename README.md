@@ -14,9 +14,12 @@ A minimal, production-ready boilerplate for converting files 100% on the client 
 1. Clone this repository:
    ```bash
    git clone [https://github.com/aideneme1001/wasm-converter-boilerplate.git](https://github.com/aideneme1001/wasm-converter-boilerplate.git)
-   npm install
-   npm run dev
-   Check out the Full Platform
+
+    npm install
+
+    npm run dev
+
+   🌍 Check out the Full Platform
 If you are looking for a complete, beautifully designed, and fully optimized file converter that supports thousands of formats (Images, Videos, Documents, Audio) directly in the browser, visit our main project:
 
 👉 EveryFileConvert.com
