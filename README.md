@@ -15,8 +15,10 @@ A minimal, production-ready boilerplate for converting files 100% on the client 
    ```bash
    git clone https://github.com/aideneme1001/wasm-converter-boilerplate.git
     ```
+
    Install dependencies:
    npm install
+
    Run the development server:
    npm run dev 
    
