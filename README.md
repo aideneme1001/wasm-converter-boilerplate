@@ -1,31 +1,103 @@
-# Next.js Client-Side WASM Converter Boilerplate
+# FFmpeg.wasm Next.js Boilerplate
 
-A minimal, production-ready boilerplate for converting files 100% on the client side using Next.js and WebAssembly (FFmpeg.wasm). **Zero server costs, complete user privacy!**
+**This is a 100% client-side boilerplate.** All file conversion happens entirely in the browser using WebAssembly. No server uploads, no backend required.
 
-🚀 **Live Demo & Full Production Tool:** [EveryFileConvert.com](https://everyfileconvert.com)
+A minimal, production-ready Next.js App Router boilerplate demonstrating browser-based video conversion using FFmpeg compiled to WebAssembly.
 
-## ✨ Features
-* **100% Client-Side:** Files never leave the user's browser.
-* **Next.js Ready:** Pre-configured `next.config.js` with correct `SharedArrayBuffer` headers.
-* **Minimalistic:** Easy to understand, easy to extract the core logic for your own projects.
+---
 
-## 💻 How to Use Locally
+## Live Demo & Full Production Tool
 
-1. Clone this repository:
-   ```bash
-   git clone  https://github.com/aideneme1001/wasm-converter-boilerplate.git
-    ```
+For a complete file conversion experience with support for 50+ formats, visit:
 
-   Install dependencies:
- ```  npm install ```
+**[EveryFileConvert.com](https://everyfileconvert.com)**
 
-   Run the development server:
-   ``` npm run dev ``` 
-   
-   🌍 Check out the Full Platform
-If you are looking for a complete, beautifully designed, and fully optimized file converter that supports thousands of formats (Images, Videos, Documents, Audio) directly in the browser, visit our main project:
+---
 
-👉https://www.EveryFileConvert.com
+## Features
 
-Created by the team at EveryFileConvert to support the open-source community.
-   
+- **Fully client-side** - Files never leave the user's browser
+- **Private by design** - No server uploads, no tracking
+- **Fast** - Uses SharedArrayBuffer for multi-threaded WASM execution
+- **Modern** - Built with Next.js App Router and TypeScript
+
+---
+
+## Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd <project-name>
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## How It Works
+
+This boilerplate demonstrates MP4 to GIF conversion:
+
+1. **Load FFmpeg WASM** - Fetches the FFmpeg core from unpkg CDN
+2. **Select an MP4 file** - User picks a video from their device
+3. **Convert in-browser** - FFmpeg processes the video entirely client-side
+4. **Download the GIF** - Result is provided as a direct download
+
+The key configuration is in `next.config.js`, which sets the required security headers for SharedArrayBuffer support:
+
+```javascript
+{
+  key: "Cross-Origin-Opener-Policy",
+  value: "same-origin",
+},
+{
+  key: "Cross-Origin-Embedder-Policy",
+  value: "require-corp",
+}
+```
+
+---
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework with App Router
+- [FFmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm) - FFmpeg compiled to WebAssembly
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+
+---
+
+## Browser Support
+
+FFmpeg.wasm requires browsers that support:
+
+- WebAssembly
+- SharedArrayBuffer (requires COOP/COEP headers)
+- Blob URLs
+
+Works in modern Chrome, Firefox, Safari, and Edge.
+
+---
+
+## License
+
+MIT
+
+---
+
+## Credits
+
+Built with [FFmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm). For a full-featured online file converter, visit [EveryFileConvert.com](https://everyfileconvert.com).
