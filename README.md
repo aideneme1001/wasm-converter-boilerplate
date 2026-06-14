@@ -22,6 +22,6 @@ A minimal, production-ready boilerplate for converting files 100% on the client 
    🌍 Check out the Full Platform
 If you are looking for a complete, beautifully designed, and fully optimized file converter that supports thousands of formats (Images, Videos, Documents, Audio) directly in the browser, visit our main project:
 
-👉 EveryFileConvert.com
+https://www.EveryFileConvert.com
 
 Created by the team at EveryFileConvert to support the open-source community.
