@@ -28,8 +28,8 @@ For a complete file conversion experience with support for 50+ formats, visit:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <project-name>
+git clone [https://github.com/aideneme1001/wasm-converter-boilerplate.git](https://github.com/aideneme1001/wasm-converter-boilerplate.git)
+cd wasm-converter-boilerplate
 ```
 
 ### 2. Install dependencies
