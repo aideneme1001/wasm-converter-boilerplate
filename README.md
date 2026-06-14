@@ -17,7 +17,7 @@ A minimal, production-ready boilerplate for converting files 100% on the client 
     ```
 
    Install dependencies:
-   npm install
+ ```  npm install ```
 
    Run the development server:
    npm run dev 
