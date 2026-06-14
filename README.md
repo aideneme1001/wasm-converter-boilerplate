@@ -13,7 +13,7 @@ A minimal, production-ready boilerplate for converting files 100% on the client 
 
 1. Clone this repository:
    ```bash
-  ``` git clone ``` https://github.com/aideneme1001/wasm-converter-boilerplate.git
+   git clone  https://github.com/aideneme1001/wasm-converter-boilerplate.git
     ```
 
    Install dependencies:
